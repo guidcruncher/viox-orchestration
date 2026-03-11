@@ -1,0 +1,76 @@
+services:
+  caddy:
+    image: caddy:latest
+    container_name: caddy-proxy
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
+      - caddy_data:/data
+      - caddy_config:/config
+    networks:
+      - viox-network
+
+  viox-musicserver:
+    image: guidcruncher/viox-musicserver:latest
+    container_name: viox-musicserver
+    hostname: viox-musicserver
+    restart: unless-stopped
+    secrets:
+      - spotify-clientid
+      - spotify-clientsecret
+    network_mode: host
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    # Device access for audio
+    devices:
+      - /dev/snd:/dev/snd
+    # Volume mounts
+    volumes:
+      - ./run/cache:/cache
+      - ./run/config:/config
+      - ./run/music:/music
+      - ./run/data:/data
+    # Environment variables
+    environment:
+      - XDG_RUNTIME_DIR=/run/user/1000
+      - BASE_URL=
+      - ENABLE_SPOTIFY_CACHE=false
+      - RADIO_PROVIDER=tunein
+    # Capabilities for audio access
+    cap_add:
+      - SYS_NICE
+    # IPC for shared memory (PulseAudio)
+    ipc: host
+
+  viox-midnightclient:
+    image: guidcruncher/viox-midnightclient:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: viox-midnightclient
+    hostname: viox-midnightclient
+    restart: unless-stopped
+    networks:
+      - viox-network
+    # Environment variables
+    environment:
+      - XDG_RUNTIME_DIR=/run/user/1000
+      - BASE_URL=
+
+
+secrets:
+  spotify-clientid:
+    file: spotify-clientid.secret
+  spotify-clientsecret:
+   file: spotify-clientsecret.secret
+
+networks:
+  viox-network:
+    driver: bridge
+
+volumes:
+  caddy_data:
+  caddy_config:

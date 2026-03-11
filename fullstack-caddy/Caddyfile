@@ -1,0 +1,28 @@
+:80 {
+    # 1. Music Server
+    # Handles /api and passes the prefix through to the container
+    handle /api* {
+        reverse_proxy viox-musicserver:8080
+    }
+
+    # Handles /doc which is the Swagger API documentation
+    # Can be removed in production for security
+    handle /docs* {
+        reverse_proxy 192.168.1.202:8080
+    }
+
+    # 2. Midnight Client
+    # Acts as the fallback for all other traffic (including /)
+    handle {
+        reverse_proxy viox-midnightclient:8081
+    }
+
+    # Optional: Enable Gzip/Zstd compression for better performance
+    encode zstd gzip
+
+    # Optional: Basic logging to stdout (useful for Docker logs)
+    log {
+        output stdout
+        format console
+    }
+}
