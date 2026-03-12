@@ -1,0 +1,6 @@
+{
+    "backEndLimit": 50,
+    "maxCacheSize": 2000,
+    "radioProvider": "radiobrowser",
+    "enableCache": false
+}
