@@ -62,7 +62,7 @@ secrets:
   spotify-clientid:
     file: spotify-clientid.secret
   spotify-clientsecret:
-   file: spotify-clientsecret.secret
+    file: spotify-clientsecret.secret
 
 networks:
   viox-network:
