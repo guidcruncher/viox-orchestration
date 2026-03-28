@@ -7,6 +7,7 @@
   "type": "commonjs",
   "main": "generate-bbc-streams.ts",
   "scripts": {
+    "run": "node ./src/generate-bbc-streams.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
