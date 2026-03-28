@@ -1,0 +1,70 @@
+[
+  { "name": "BBC Radio 1", "frequency": "97500", "pi": "C201", "ecc": "E0" },
+  { "name": "BBC Radio 1Xtra", "frequency": "99000", "pi": "C221", "ecc": "E0" },
+  { "name": "BBC Radio 2", "frequency": "88200", "pi": "C202", "ecc": "E0" },
+  { "name": "BBC Radio 3", "frequency": "90900", "pi": "C203", "ecc": "E0" },
+  { "name": "BBC Radio 4", "frequency": "92700", "pi": "C204", "ecc": "E0" },
+  { "name": "BBC Radio 4 Extra", "frequency": "72000", "pi": "C214", "ecc": "E0" },
+  { "name": "BBC Radio 5 Live", "frequency": "69300", "pi": "C205", "ecc": "E0" },
+  { "name": "BBC Radio 5 Live Sports Extra", "frequency": "99000", "pi": "C215", "ecc": "E0" },
+  { "name": "BBC 6 Music", "frequency": "70700", "pi": "C206", "ecc": "E0" },
+  { "name": "BBC Asian Network", "frequency": "145800", "pi": "C207", "ecc": "E0" },
+  { "name": "BBC World Service UK", "frequency": "198000", "pi": "C208", "ecc": "E0" },
+
+  { "name": "BBC Radio Scotland", "frequency": "92900", "pi": "C301", "ecc": "E0" },
+  { "name": "BBC Radio nan Gaidheal", "frequency": "104700", "pi": "C302", "ecc": "E0" },
+
+  { "name": "BBC Radio Wales", "frequency": "88200", "pi": "C401", "ecc": "E0" },
+  { "name": "BBC Radio Cymru", "frequency": "96300", "pi": "C402", "ecc": "E0" },
+  { "name": "BBC Radio Cymru 2", "frequency": "120600", "pi": "C403", "ecc": "E0" },
+
+  { "name": "BBC Radio Ulster", "frequency": "134100", "pi": "C501", "ecc": "E0" },
+  { "name": "BBC Radio Foyle", "frequency": "93300", "pi": "C502", "ecc": "E0" },
+
+  { "name": "BBC Radio London", "frequency": "94900", "pi": "C601", "ecc": "E0" },
+  { "name": "BBC Radio Manchester", "frequency": "95500", "pi": "C602", "ecc": "E0" },
+  { "name": "BBC Radio Merseyside", "frequency": "95500", "pi": "C603", "ecc": "E0" },
+  { "name": "BBC Radio Lancashire", "frequency": "103900", "pi": "C604", "ecc": "E0" },
+  { "name": "BBC Radio Cumbria", "frequency": "95800", "pi": "C605", "ecc": "E0" },
+  { "name": "BBC Radio Newcastle", "frequency": "95100", "pi": "C606", "ecc": "E0" },
+  { "name": "BBC Radio Tees", "frequency": "95100", "pi": "C607", "ecc": "E0" },
+  { "name": "BBC Radio Leeds", "frequency": "92900", "pi": "C608", "ecc": "E0" },
+  { "name": "BBC Radio Sheffield", "frequency": "88500", "pi": "C609", "ecc": "E0" },
+  { "name": "BBC Radio York", "frequency": "103700", "pi": "C610", "ecc": "E0" },
+  { "name": "BBC Radio Humberside", "frequency": "95800", "pi": "C611", "ecc": "E0" },
+
+  { "name": "BBC Radio Nottingham", "frequency": "103800", "pi": "C612", "ecc": "E0" },
+  { "name": "BBC Radio Derby", "frequency": "104500", "pi": "C613", "ecc": "E0" },
+  { "name": "BBC Radio Leicester", "frequency": "104900", "pi": "C614", "ecc": "E0" },
+  { "name": "BBC Radio Lincolnshire", "frequency": "94900", "pi": "C615", "ecc": "E0" },
+
+  { "name": "BBC Radio West Midlands", "frequency": "95500", "pi": "C616", "ecc": "E0" },
+  { "name": "BBC Radio WM", "frequency": "95500", "pi": "C616", "ecc": "E0" },
+  { "name": "BBC Radio Stoke", "frequency": "104400", "pi": "C617", "ecc": "E0" },
+  { "name": "BBC Radio Shropshire", "frequency": "95700", "pi": "C618", "ecc": "E0" },
+  { "name": "BBC Radio Hereford & Worcester", "frequency": "104000", "pi": "C619", "ecc": "E0" },
+
+  { "name": "BBC Radio Bristol", "frequency": "94900", "pi": "C620", "ecc": "E0" },
+  { "name": "BBC Radio Somerset", "frequency": "95600", "pi": "C621", "ecc": "E0" },
+  { "name": "BBC Radio Gloucestershire", "frequency": "104700", "pi": "C622", "ecc": "E0" },
+  { "name": "BBC Radio Wiltshire", "frequency": "103500", "pi": "C623", "ecc": "E0" },
+
+  { "name": "BBC Radio Devon", "frequency": "103400", "pi": "C624", "ecc": "E0" },
+  { "name": "BBC Radio Cornwall", "frequency": "95700", "pi": "C625", "ecc": "E0" },
+
+  { "name": "BBC Radio Oxford", "frequency": "95500", "pi": "C626", "ecc": "E0" },
+  { "name": "BBC Radio Berkshire", "frequency": "104100", "pi": "C627", "ecc": "E0" },
+  { "name": "BBC Radio Solent", "frequency": "96300", "pi": "C628", "ecc": "E0" },
+  { "name": "BBC Radio Kent", "frequency": "96300", "pi": "C629", "ecc": "E0" },
+  { "name": "BBC Radio Sussex", "frequency": "95700", "pi": "C630", "ecc": "E0" },
+  { "name": "BBC Radio Surrey", "frequency": "104000", "pi": "C631", "ecc": "E0" },
+
+  { "name": "BBC Radio Cambridgeshire", "frequency": "95800", "pi": "C632", "ecc": "E0" },
+  { "name": "BBC Radio Northampton", "frequency": "104200", "pi": "C633", "ecc": "E0" },
+  { "name": "BBC Radio Essex", "frequency": "103500", "pi": "C634", "ecc": "E0" },
+  { "name": "BBC Radio Suffolk", "frequency": "95500", "pi": "C635", "ecc": "E0" },
+  { "name": "BBC Radio Norfolk", "frequency": "95500", "pi": "C636", "ecc": "E0" },
+
+  { "name": "BBC Radio Coventry & Warwickshire", "frequency": "94900", "pi": "C637", "ecc": "E0" },
+  { "name": "BBC Three Counties Radio", "frequency": "95300", "pi": "C638", "ecc": "E0" }
+]
